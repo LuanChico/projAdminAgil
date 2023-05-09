@@ -1,0 +1,61 @@
+object fTitulo: TfTitulo
+  Left = 0
+  Top = 0
+  Width = 809
+  Height = 45
+  TabOrder = 0
+  object Label1: TLabel
+    Left = 45
+    Top = 0
+    Width = 40
+    Height = 45
+    Align = alLeft
+    Caption = '<titulo>'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
+    ExplicitHeight = 13
+  end
+  object lTituloTela: TLabel
+    AlignWithMargins = True
+    Left = 100
+    Top = 0
+    Width = 4
+    Height = 45
+    Margins.Left = 15
+    Margins.Top = 0
+    Margins.Right = 15
+    Margins.Bottom = 0
+    Align = alLeft
+    Caption = '-'
+    Layout = tlCenter
+    ExplicitHeight = 13
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 0
+    Top = 0
+    Width = 45
+    Height = 45
+    Align = alLeft
+    ImageIndex = 1
+    ImageName = 'menu'
+    Images = dataImages.iListImages
+    Flat = True
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 764
+    Top = 0
+    Width = 45
+    Height = 45
+    Align = alRight
+    ImageIndex = 0
+    ImageName = '2923017'
+    Images = dataImages.iListImages
+    Flat = True
+    ExplicitLeft = 748
+  end
+end
