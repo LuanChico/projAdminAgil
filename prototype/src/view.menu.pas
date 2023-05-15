@@ -10,6 +10,7 @@ uses
 type
   TfMenu = class(TfPadrao)
     procedure aPesquisaExecute(Sender: TObject);
+    procedure aPesquisaSMExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,6 +23,7 @@ var
 implementation
 
 uses
+  view.pesquisa.gerente,
   view.pesquisa;
 
 {$R *.dfm}
@@ -29,6 +31,11 @@ uses
 procedure TfMenu.aPesquisaExecute(Sender: TObject);
 begin
   AbrirTelaSelf(TfPesquisa.Create(Self));
+end;
+
+procedure TfMenu.aPesquisaSMExecute(Sender: TObject);
+begin
+  AbrirTelaSelf(TfPesquisaGerente.Create(Self));
 end;
 
 end.

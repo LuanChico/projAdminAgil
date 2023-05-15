@@ -3,20 +3,27 @@ inherited fPesquisa: TfPesquisa
   PixelsPerInch = 96
   TextHeight = 29
   inherited Frame11: TfTitulo
+    inherited Label1: TLabel
+      Height = 40
+    end
     inherited lTituloTela: TLabel
       Width = 159
+      Height = 40
       Caption = '<aPesquisa>'
       Font.Style = [fsBold]
       ParentFont = False
       ExplicitWidth = 159
     end
   end
+  inherited svMenu: TSplitView
+    UseAnimation = False
+  end
   inherited svUser: TSplitView
     ParentBiDiMode = True
+    UseAnimation = False
   end
   inherited Panel1: TPanel
-    ExplicitLeft = 298
-    ExplicitTop = -16
+    ExplicitLeft = 250
     object Label2: TLabel
       AlignWithMargins = True
       Left = 3
@@ -27,7 +34,6 @@ inherited fPesquisa: TfPesquisa
       Margins.Bottom = 5
       Align = alTop
       Caption = '<titulo_pergunta_4>'
-      ExplicitTop = 407
       ExplicitWidth = 220
     end
     object Label1: TLabel
@@ -85,7 +91,6 @@ inherited fPesquisa: TfPesquisa
       Margins.Bottom = 5
       Align = alTop
       Caption = '<titulo_pergunta_3>'
-      ExplicitTop = 291
       ExplicitWidth = 220
     end
     object Edit2: TEdit
@@ -191,8 +196,6 @@ inherited fPesquisa: TfPesquisa
       Caption = 'Panel6'
       ShowCaption = False
       TabOrder = 3
-      ExplicitLeft = -3
-      ExplicitTop = 444
       object SpinEdit1: TSpinEdit
         AlignWithMargins = True
         Left = 3
@@ -204,9 +207,6 @@ inherited fPesquisa: TfPesquisa
         MinValue = 0
         TabOrder = 0
         Value = 0
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitHeight = 41
       end
       object Panel2: TPanel
         Left = 127
@@ -218,10 +218,6 @@ inherited fPesquisa: TfPesquisa
         Caption = 'Panel2'
         ShowCaption = False
         TabOrder = 1
-        ExplicitLeft = 0
-        ExplicitTop = 8
-        ExplicitWidth = 854
-        ExplicitHeight = 30
         object SpeedButton1: TSpeedButton
           AlignWithMargins = True
           Left = 5
@@ -324,8 +320,6 @@ inherited fPesquisa: TfPesquisa
       Caption = 'Panel6'
       ShowCaption = False
       TabOrder = 4
-      ExplicitLeft = -3
-      ExplicitTop = 175
       object SpinEdit2: TSpinEdit
         AlignWithMargins = True
         Left = 3
@@ -337,9 +331,6 @@ inherited fPesquisa: TfPesquisa
         MinValue = 0
         TabOrder = 0
         Value = 0
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitHeight = 41
       end
       object Panel4: TPanel
         Left = 127
@@ -351,8 +342,6 @@ inherited fPesquisa: TfPesquisa
         Caption = 'Panel2'
         ShowCaption = False
         TabOrder = 1
-        ExplicitLeft = 121
-        ExplicitWidth = 733
         object SpeedButton6: TSpeedButton
           AlignWithMargins = True
           Left = 5
@@ -455,8 +444,6 @@ inherited fPesquisa: TfPesquisa
       Caption = 'Panel6'
       ShowCaption = False
       TabOrder = 5
-      ExplicitLeft = 6
-      ExplicitTop = 212
       object SpinEdit3: TSpinEdit
         AlignWithMargins = True
         Left = 3
@@ -468,9 +455,6 @@ inherited fPesquisa: TfPesquisa
         MinValue = 0
         TabOrder = 0
         Value = 0
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitHeight = 41
       end
       object Panel8: TPanel
         Left = 127
@@ -482,8 +466,6 @@ inherited fPesquisa: TfPesquisa
         Caption = 'Panel2'
         ShowCaption = False
         TabOrder = 1
-        ExplicitLeft = 121
-        ExplicitWidth = 733
         object SpeedButton11: TSpeedButton
           AlignWithMargins = True
           Left = 5

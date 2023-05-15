@@ -6,13 +6,13 @@ CREATE TABLE usuario
  usuario VARCHAR(n) NOT NULL DEFAULT '50',  
 ); 
 
-CREATE TABLE permissoesusuario 
+CREATE TABLE permissoesUsuario 
 ( 
  id INT PRIMARY KEY AUTO_INCREMENT,  
- idUsuario INT,  
+ idUsuario INT NOT NULL,  
  gerenciarPesquisa CHAR(n) NOT NULL DEFAULT 'f',  
  gerenciarUsuarios CHAR(n) NOT NULL DEFAULT 'f',  
  CHECK (gerenciarPesquisa LIKE '%f, t%' AND gerenciarUsuarios LIKE '%f, t%')
 ); 
 
-ALTER TABLE permissoesusuario ADD FOREIGN KEY(idUsuario) REFERENCES usuario (idUsuario)
+ALTER TABLE permissoesUsuario ADD FOREIGN KEY(idUsuario) REFERENCES usuario (idUsuario)

@@ -1,0 +1,23 @@
+Usuários e Direitos
+
+- Diogo		Desenvolvedor	Midas		-
+- Luan		Desenvolvedor	BigBang		-
+- Afonso	PO				Ambos		-
+- Caio		Desenvolvedor	Tributario	-
+- Drika		Desenvolvedor	Midas		-
+- Merly		PO				Midas		-
+- Manoel	Analista		BigBang		-
+- Ana		Analista		Midas		-
+- Ricardo	Desenvolvedor	BigBang		TL
+
+Todos poderão visualizar quem está conectado a determinada tela
+  - Exemplo retrô: Temos as interações que devem ser adicionadas ou removidas em tempo real para todos.
+  - Cada tela/retrô terá uma identificação única, ao conectar nessa identificação todos visualizam o colega. (CRUD)
+  - 
+
+Verificar possibilidade de importação de usuários do redmine
+
+curl --location 'https://redmine.appdr.com/projects.json?name=20200306_P_TrueValue' \
+--header 'Content-Type: application/json' \
+--header 'X-Redmine-API-Key: 0a09bc7f6390c96886527819a01ff9fbf5bf1ee4' \
+--data ''

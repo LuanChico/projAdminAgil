@@ -12,7 +12,8 @@ uses
   frame.titulo in 'src\frame.titulo.pas' {fTitulo: TFrame},
   lib.strings in 'src\lib.strings.pas',
   view.pesquisa in 'src\view.pesquisa.pas' {fPesquisa},
-  frame.sprint in 'src\frame.sprint.pas' {fraSprint: TFrame};
+  frame.sprint in 'src\frame.sprint.pas' {fraSprint: TFrame},
+  view.pesquisa.gerente in 'src\view.pesquisa.gerente.pas' {fPesquisaGerente};
 
 {$R *.res}
 

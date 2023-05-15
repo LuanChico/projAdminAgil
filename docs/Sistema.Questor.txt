@@ -1,0 +1,17 @@
+MVP
+- usuario e Direitos 
+- Votação das tarefas ( P, M, G) ( Pontos)
+- Retrospectiva ( Cards e Curtidas)
+- Squad e Times, assuntos e Carga Horario (Calculo de horas)
+
+2º Etapas
+- Integração das Votações para integrar Redmine, Jira (tarefas) - API
+- Fluxo da Sprint - BI Andamento e staus    
+
+3º 
+- Status projetos 
+- Roadmap
+
+Precificação 
+- Usuario ou CNPJ
+- Hospedagem

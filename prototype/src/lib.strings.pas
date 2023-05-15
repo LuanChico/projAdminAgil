@@ -16,6 +16,7 @@ type
   iLibStrings = interface
     ['{D587A05E-C83F-47CC-88A3-1C9C829888D0}']
     procedure onCreate;
+    function PegarTituloSistema: string;
     procedure ConverterLabel(aLabel: TLabel);
     procedure ConverterSpeedButton(aButton: TSpeedButton);
     procedure ConverterAction(aAction: TAction);
@@ -34,6 +35,7 @@ type
     destructor Destroy; override;
 
     procedure onCreate;
+    function PegarTituloSistema: string;
     procedure ConverterLabel(aLabel: TLabel);
     procedure ConverterSpeedButton(aButton: TSpeedButton);
     procedure ConverterAction(aAction: TAction);
@@ -76,7 +78,7 @@ begin
     Add('<titulo>',             'adminAgil');
     Add('<menu_index_0>',       'Retrospectiva');
     Add('<aPesquisa>',          'Pesquisa Felicidade');
-    Add('<aPesquisaSM>',        'Configurar Pesquisa');
+    Add('<aPesquisaSM>',        'Gerenciar Pesquisa');
     Add('<aCerimonia>',         'Cerimonia');
     Add('<user_index_0>',       'Usuário');
     Add('<aConfigUser>',        'Configurações');
@@ -91,6 +93,11 @@ begin
     Add('<salvar>',             'Salvar');
     Add('<descr_sprint>',       'Sprint '+ PegarVersaoSprint);
   end;
+end;
+
+function TLibStrings.PegarTituloSistema: string;
+begin
+  Result := FArrayStrings.Items['<titulo>'];
 end;
 
 function TLibStrings.PegarVersaoSprint: string;
