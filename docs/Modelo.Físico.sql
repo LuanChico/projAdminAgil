@@ -72,6 +72,7 @@ CREATE TABLE pergunta
  valorInicial VARCHAR(50),  
  valorFinal VARCHAR(50),  
  tamanhoTotal INT,  
+ id_pesquisa bigint,
  CHECK (tiporesposta LIKE '%d, s, b%'),
  PRIMARY KEY (id_pergunta)
 ); 
@@ -161,7 +162,8 @@ CREATE TABLE repostaUsuario
  id_sprint bigint,  
  id_pergunta bigint,  
  id_pesquisa bigint,
- primary key (id_usuario, id_sprint, id_pergunta, id_pesquisa)  
+ id_respostaUsuario bigserial NOT NULL,
+ primary key (id_respostaUsuario)
 ); 
 
 CREATE TABLE retrospectiva_sprint 
@@ -191,3 +193,4 @@ ALTER TABLE repostaUsuario 			ADD FOREIGN KEY(id_pergunta)		REFERENCES pergunta 
 ALTER TABLE repostaUsuario 			ADD FOREIGN KEY(id_pesquisa)		REFERENCES pesquisa 		(id_pesquisa);
 ALTER TABLE retrospectiva_sprint 	ADD FOREIGN KEY(id_retrospectiva) 	REFERENCES retrospectiva 	(id_retrospectiva);
 ALTER TABLE retrospectiva_sprint 	ADD FOREIGN KEY(id_sprint)        	REFERENCES sprint 			(id_sprint);
+ALTER TABLE pergunta 				ADD FOREIGN KEY(id_pesquisa)        REFERENCES pesquisa			(id_pesquisa);
